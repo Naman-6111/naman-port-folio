@@ -8,6 +8,7 @@ import "./click-glow.css";
 import "./contact-effects.css";
 import "./contact-layout.css";
 import "./project-preview-interactions.css";
+import "./project-preview-themes.css";
 
 installPreviewGlow();
 installProjectPreviewInteractions();

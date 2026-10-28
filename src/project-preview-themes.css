@@ -1,0 +1,65 @@
+/* Give each project interface a distinct, brighter product-dashboard palette. */
+.commerce-preview{background:#eeeae2;color:#25232d;border-color:#d4cddd;box-shadow:0 18px 60px #0005}
+.commerce-preview .preview-top{border-color:#d5d0d9;color:#615d6b}
+.commerce-preview .preview-top .mini-mark{color:#7246cb}
+.commerce-preview .online-dot{color:#3d8666}
+.commerce-preview .dash-heading h3,.commerce-preview .commerce-stats b{color:#292632}
+.commerce-preview small,.commerce-preview .chart-labels{color:#777281}
+.commerce-preview .dash-select,.commerce-preview .commerce-stats>div,.commerce-preview .chart-card,.commerce-preview .recommend-card{background:#fbfaf8;border-color:#d5d0d9;color:#625e6d}
+.commerce-preview .commerce-stats em{color:#238460}
+.commerce-preview .product-swatch{background:#e6def5;color:#764dca}
+.commerce-preview .recommend-card>b{color:#302841}
+.commerce-preview .recommend-card>strong{color:#734bc3}
+.commerce-preview .rec-connect{color:#287584}
+.commerce-preview .preview-mini-action{background:#7651d1;border-color:#7651d1;color:#fff}
+.commerce-preview .preview-cart-count{color:#287460}
+
+.payment-preview{background:#e6f2f1;color:#1e2c34;border-color:#b8d4d2;box-shadow:0 18px 60px #0005}
+.payment-preview .preview-top{border-color:#c6dbd9;color:#5e7478}
+.payment-preview .mini-mark{color:#277d86}
+.payment-preview .online-dot{color:#287a58}
+.payment-preview .payment-title h3{color:#1f3439}
+.payment-preview .payment-title small,.payment-preview .payment-stats small{color:#64797c}
+.payment-preview .payment-stats>div,.payment-preview .tx-list{background:#f7fbfa;border-color:#c8dcda}
+.payment-preview .payment-stats b{color:#223b3e}
+.payment-preview .tx-head,.payment-preview .tx-row{border-color:#d8e7e5;color:#5c6c70}
+.payment-preview .tx-row{background:#fff}
+.payment-preview .tx-name b{color:#29393c}
+.payment-preview .tx-name small{color:#738084}
+.payment-preview .safe-text{color:#27805c}.payment-preview .warn-text{color:#a56d13}.payment-preview .danger-text{color:#ba4654}
+.payment-preview .risk-pill{background:#edf8f1;border-color:#b7d9c2;color:#347552}
+.payment-preview .preview-transaction-detail{background:#f0f6f5;border-color:#c2d6d4;color:#40595d}
+.payment-preview .risk-legend{color:#65787a}
+.payment-preview .risk-legend i{background:#43a978}.payment-preview .risk-legend i:nth-of-type(2){background:#e9ad4e}.payment-preview .risk-legend i:nth-of-type(3){background:#df7272}
+.payment-preview .tx-row:hover,.payment-preview .tx-row.is-selected{background:#e4f3f0;box-shadow:inset 2px 0 #33a0a2}
+
+.rag-preview{background:#eeecf8;color:#26243a;border-color:#d0cbe5;box-shadow:0 18px 60px #0005}
+.rag-preview .preview-top{border-color:#d3d0e2;color:#6b687d}
+.rag-preview .mini-mark{color:#7253ba}
+.rag-preview .online-dot{color:#33816b}
+.rag-preview .rag-query>small,.rag-preview .retrieval-box>small{color:#66548e}
+.rag-preview .preview-rag-form input{background:#fbfaff;border-color:#d1cce3;color:#332e45}
+.rag-preview .preview-rag-form input::placeholder{color:#817d90}
+.rag-preview .preview-rag-form button{background:#7152c2;border-color:#7152c2;color:#fff}
+.rag-preview .retrieval-box{background:#faf9ff;border-color:#d4cfe5}
+.rag-preview .retrieval-box p{color:#625d72}
+.rag-preview .retrieval-box p b{color:#5139a0}
+.rag-preview .retrieval-box.vector>small{color:#427b87}
+.rag-preview .retrieval-box.vector p b{color:#247f8b}
+.rag-preview .match-track{background:#d9d5e4}
+.rag-preview .context-box{background:#faf9ff;border-color:#d4cfe5}
+.rag-preview .context-box>small{color:#5e5870}
+.rag-preview .context-box>small span{color:#777184}
+.rag-preview .context-chunks{background:#eeebf7}
+.rag-preview .context-chunks span{color:#58546a}
+.rag-preview .muted-chunk{opacity:.7}
+.rag-preview .llm-answer{background:#e2eff0;border-color:#c5dcdd}
+.rag-preview .llm-answer p{color:#3d5059}
+.rag-preview .llm-answer p small{color:#69568e}
+.rag-preview .answer-orb{color:#7652bb;border-color:#b9a6df}
+.rag-preview .retrieval-box:hover,.rag-preview .retrieval-box.is-selected{background:#f1edff;border-color:#9375d2}
+.rag-preview .retrieval-box.vector:hover,.rag-preview .retrieval-box.vector.is-selected{background:#e8f7f7;border-color:#48aeb7}
+
+.commerce-preview.is-lit{background-color:#eeeae2}.payment-preview.is-lit{background-color:#e6f2f1}.rag-preview.is-lit{background-color:#eeecf8}
+.preview.is-lit{box-shadow:0 0 0 2px rgba(155,121,255,.55),0 0 34px rgba(139,92,246,.48),0 0 70px rgba(139,92,246,.22)}
+@media(max-width:760px){.preview{box-shadow:0 12px 35px #0004}}
