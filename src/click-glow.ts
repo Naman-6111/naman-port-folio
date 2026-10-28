@@ -18,7 +18,7 @@ export function installPreviewGlow() {
     const timer = window.setTimeout(() => {
       clicked.classList.remove('is-click-lit', 'is-lit');
       timers.delete(clicked);
-    }, 900);
+    }, 1500);
     timers.set(clicked, timer);
   };
 
