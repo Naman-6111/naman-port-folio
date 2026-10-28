@@ -1,6 +1,5 @@
 .preview{isolation:isolate;cursor:pointer;transition:box-shadow .2s ease,border-color .2s ease,transform .25s ease}
 .preview:after{content:'';position:absolute;z-index:2;inset:-1px;pointer-events:none;opacity:0;mix-blend-mode:screen;background:linear-gradient(110deg,rgba(236,35,197,.68),rgba(107,73,224,.34) 44%,rgba(0,221,238,.68));transition:opacity .18s ease}
-.preview>:not(.rec-connect){position:relative;z-index:3}.preview>.rec-connect{z-index:3}
 .preview:hover{border-color:rgba(112,203,235,.52)}
 .preview.is-lit{border-color:#5de4f3;box-shadow:0 0 0 1px rgba(0,226,240,.4),0 0 28px rgba(26,205,230,.38),0 0 62px rgba(160,52,208,.3);transform:perspective(1000px) rotateY(0) translateY(-2px)}
 .preview.is-lit:after{opacity:.34;animation:preview-flash .9s ease-out both}
