@@ -1,0 +1,24 @@
+/* Shared hover illumination: quiet at rest, clear when the pointer lands. */
+main :is(button,a,.brand,.stat-card,.skill-chip,.skill-group,.achievement-card,.project-showcase,.preview,.eco-node,.event-node,.contact-orbit,.contact-form,.about-stamp,.journey-item,.project-tags span,.availability,.art-node,.eyebrow){transition:filter .22s ease,box-shadow .22s ease,border-color .22s ease,transform .22s ease}
+main :is(button,a,.brand,.stat-card,.skill-chip,.skill-group,.achievement-card,.project-showcase,.preview,.eco-node,.event-node,.contact-orbit,.contact-form,.about-stamp,.journey-item,.project-tags span,.availability,.art-node,.eyebrow):hover{filter:drop-shadow(0 0 8px rgba(139,92,246,.25))}
+main a:hover,main button:hover{color:#fff}
+.project-showcase:hover,.stat-card:hover,.skill-group:hover,.achievement-card:hover,.contact-form:hover{border-color:rgba(166,132,255,.62);box-shadow:0 0 26px rgba(139,92,246,.15)}
+.contact-section{background-image:radial-gradient(ellipse at 12% 18%,rgba(139,92,246,.08),transparent 36%),radial-gradient(ellipse at 86% 64%,rgba(0,229,255,.055),transparent 34%)}
+.contact-head h2{font-weight:800;transition:filter .25s,text-shadow .25s,letter-spacing .25s}
+.contact-head:hover h2{filter:brightness(1.16);text-shadow:0 0 34px rgba(139,92,246,.22);letter-spacing:-.09em}
+.contact-head>div:first-child>p{transition:color .22s}.contact-head:hover>div:first-child>p{color:#d2cddb}
+.contact-details>a{position:relative;padding:12px 14px;border:1px solid transparent;background:rgba(255,255,255,.018);transition:all .22s}
+.contact-details>a:hover{border-color:rgba(0,229,255,.35);background:rgba(0,229,255,.045);box-shadow:0 0 22px rgba(0,229,255,.1);transform:translateX(4px)}
+.contact-email:hover{color:#fff!important}
+.contact-form{position:relative;overflow:hidden;transition:border-color .25s,box-shadow .25s,transform .25s}
+.contact-form:before{content:'';position:absolute;inset:0;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(157,121,255,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(157,121,255,.09) 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(135deg,#000,transparent 65%)}
+.contact-form>*{position:relative}
+.contact-form:hover{transform:translateY(-3px);box-shadow:0 18px 45px rgba(0,0,0,.28),0 0 28px rgba(139,92,246,.12)}
+.contact-form input:hover,.contact-form textarea:hover{border-color:#71608d;background:#111019}
+.contact-form input:focus,.contact-form textarea:focus{box-shadow:0 0 0 3px rgba(139,92,246,.13),0 0 18px rgba(139,92,246,.11)}
+.contact-orbit{animation:contact-orbit-float 7s ease-in-out infinite;transition:box-shadow .3s,transform .3s}
+.contact-orbit:hover{transform:scale(1.08);box-shadow:0 0 28px rgba(139,92,246,.24),0 0 55px rgba(0,229,255,.12)}
+@keyframes contact-orbit-float{50%{translate:0 -8px}}
+.placeholder-note{display:none}
+@media(hover:none){main :is(button,a,.brand,.stat-card,.skill-chip,.skill-group,.achievement-card,.project-showcase,.preview,.eco-node,.event-node,.contact-orbit,.contact-form,.about-stamp,.journey-item,.project-tags span,.availability,.art-node,.eyebrow):hover{filter:none}}
+@media(prefers-reduced-motion:reduce){.contact-orbit{animation:none}.contact-form:hover,.contact-head:hover h2{transform:none;letter-spacing:inherit}}
