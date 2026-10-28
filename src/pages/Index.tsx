@@ -11,11 +11,11 @@ const projects: Project[] = [
 ];
 
 const skillGroups = [
-  { name: 'Languages', items: ['C','C++','SQL','JavaScript','Python'] },
+  { name: 'Programming Languages', items: ['C','C++','SQL','JavaScript','Python'] },
   { name: 'Tools', items: ['VS Code','Git','GitHub','Jupyter Notebook','Figma'] },
-  { name: 'Libraries', items: ['NumPy','Pandas','Matplotlib','Seaborn'] },
-  { name: 'Machine Learning', items: ['Regression','Classification','SVM','Decision Trees','Random Forest','AdaBoost','XGBoost','Clustering'] },
-  { name: 'Core CS', items: ['Data Structures & Algorithms','Object-Oriented Programming','Database Management Systems'] },
+  { name: 'Libraries & Frameworks', items: ['NumPy','Pandas','Matplotlib','Seaborn'] },
+  { name: 'Machine Learning Algorithms', items: ['Regression','Classification','Support Vector Machines (SVM)','Decision Trees','Random Forest','AdaBoost','XGBoost','Clustering'] },
+  { name: 'Core Computer Science', items: ['Data Structures and Algorithms','Object-Oriented Programming','Database Management Systems'] },
 ];
 const projectTech = ['MongoDB','Express.js','React.js','Node.js','Stripe API','FastAPI','LangChain','ChromaDB','BM25','Sentence Embeddings'];
 const achievements = [
