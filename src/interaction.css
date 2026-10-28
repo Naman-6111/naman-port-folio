@@ -34,3 +34,16 @@
 @media(max-width:760px){.section{padding-left:6%;padding-right:6%}.section-head{margin-bottom:38px}.section-head h2,.about-section .section-head h2:after,.projects-section .section-head h2:before,.skills-section .section-head h2:before,.skills-section .section-head h2:after,.achievements-section .section-head h2:before,.achievements-section .section-head h2:after{font-size:clamp(29px,7vw,44px)}.section-side{display:none}.about-section .section-head h2:before{font-size:clamp(27px,6.1vw,40px)}.achievements-section .achieve-terminal{position:static;transform:none;margin:18px auto 0;width:100%}.achievements-section .section-head{margin-bottom:38px}.achievement-grid{padding-left:37px}.achievement-grid:before{left:14px}.achievement-card:before{left:-36px;width:24px;height:24px}.achievement-card:after{left:-30px;font-size:11px}.achievement-card{padding:16px;min-height:105px}.achievement-card h3{font-size:15px}.event-visual{border-radius:18px 18px 0 0}.stat-grid{grid-template-columns:1fr 1fr}.stat-wide{grid-column:span 2}.skill-filters{justify-content:flex-start}.skill-filters button{padding:9px 12px;font-size:8px}}
 @media(prefers-reduced-motion:reduce){.orbit-one,.orbit-two,.orbit-three,.neural-link{animation:none}.hero h1,.hero h1 .gradient-words,.floating-terminal,.art-node,.skill-group,.achievement-card,.project-showcase{transition:none}}
 @media(max-width:420px){.stat-grid{grid-template-columns:1fr}.stat-wide{grid-column:auto}.achievement-grid{padding-left:32px}.achievement-grid:before{left:12px}.achievement-card:before{left:-30px;width:20px;height:20px}.achievement-card:after{left:-25px;font-size:9px}}
+
+/* Bring section content into view sooner and make hover states easier to notice. */
+.section{padding-top:96px;padding-bottom:105px}
+.hero-bottom{bottom:20px}
+.project-showcase:hover .preview{transform:perspective(1000px) rotateY(0) translateY(-5px) scale(1.015);box-shadow:0 24px 75px rgba(0,0,0,.6),0 0 35px rgba(139,92,246,.16)}
+.stat-card:hover,.achievement-card:hover{box-shadow:0 15px 42px rgba(104,65,194,.18),inset 0 0 0 1px rgba(153,113,239,.15)}
+.skill-chip:hover{transform:translateY(-4px) scale(1.045);border-color:#9b79ed;color:#fff}
+.eco-node:hover{transform:translateY(-4px) scale(1.04);border-color:#56dce8;color:#fff}
+.project-open:hover{transform:rotate(45deg) scale(1.1)}
+.nav-links button:not(.nav-cta):hover{transform:translateY(-2px);text-shadow:0 0 15px rgba(0,229,255,.5)}
+@media(max-width:760px){.section{padding-top:72px;padding-bottom:78px}.project-showcase:hover .preview{transform:none}}
+@media(prefers-reduced-motion:reduce){.project-showcase:hover .preview,.skill-chip:hover,.eco-node:hover,.nav-links button:not(.nav-cta):hover{transform:none}}
+
