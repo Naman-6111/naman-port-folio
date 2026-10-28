@@ -1,0 +1,5 @@
+/* Keep the identity and small supporting labels crisp and visibly weighted. */
+.brand-label small{font-size:0!important}
+.brand-label small:after{content:'ASPIRING SOFTWARE DEVELOPER';font:800 8px var(--mono);letter-spacing:1.05px;color:#a09baa;white-space:nowrap}
+main small,main .eyebrow,main .section-kicker,main .micro-label,main .section-side,main .project-meta,main .project-subtitle,main .stat-index,main .hero-index,main .hero-bottom,main .group-count,main .achievement-top,main .achievement-bottom,main .modal-kicker,main .contact-form label,main .form-heading,main .placeholder-note,main .project-tags span{font-weight:700!important}
+@media(max-width:420px){.brand-label small:after{font-size:7px;letter-spacing:.7px}}

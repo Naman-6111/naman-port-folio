@@ -9,6 +9,7 @@ import "./contact-effects.css";
 import "./contact-layout.css";
 import "./project-preview-interactions.css";
 import "./project-preview-themes.css";
+import "./text-weight.css";
 
 installPreviewGlow();
 installProjectPreviewInteractions();
