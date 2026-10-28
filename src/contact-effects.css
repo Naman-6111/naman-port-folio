@@ -22,3 +22,6 @@ main a:hover,main button:hover{color:#fff}
 .placeholder-note{display:none}
 @media(hover:none){main :is(button,a,.brand,.stat-card,.skill-chip,.skill-group,.achievement-card,.project-showcase,.preview,.eco-node,.event-node,.contact-orbit,.contact-form,.about-stamp,.journey-item,.project-tags span,.availability,.art-node,.eyebrow):hover{filter:none}}
 @media(prefers-reduced-motion:reduce){.contact-orbit{animation:none}.contact-form:hover,.contact-head:hover h2{transform:none;letter-spacing:inherit}}
+.brand-label small{font-size:0!important;letter-spacing:1.2px}
+.brand-label small:after{content:'ASPIRING SOFTWARE ENGINEER';font:8px var(--mono);letter-spacing:1.05px;color:#777581;white-space:nowrap}
+@media(max-width:420px){.brand-label small:after{font-size:7px;letter-spacing:.7px}}
