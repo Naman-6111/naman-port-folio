@@ -1,19 +1,25 @@
 export function installPreviewGlow() {
   const timers = new WeakMap<HTMLElement, number>();
+  const targets = 'button, a, input, textarea, select, [role="button"], .preview, .project-showcase, .stat-card, .achievement-card, .skill-chip, .eco-node, .event-node, .eyebrow';
 
   const handleClick = (event: MouseEvent) => {
     const target = event.target;
     if (!(target instanceof Element)) return;
 
-    const preview = target.closest<HTMLElement>('.preview');
-    if (!preview) return;
+    const clicked = target.closest<HTMLElement>(targets);
+    if (!clicked) return;
 
-    preview.classList.add('is-lit');
-    const previousTimer = timers.get(preview);
+    clicked.classList.add('is-click-lit');
+    if (clicked.matches('.preview')) clicked.classList.add('is-lit');
+
+    const previousTimer = timers.get(clicked);
     if (previousTimer) window.clearTimeout(previousTimer);
 
-    const timer = window.setTimeout(() => preview.classList.remove('is-lit'), 900);
-    timers.set(preview, timer);
+    const timer = window.setTimeout(() => {
+      clicked.classList.remove('is-click-lit', 'is-lit');
+      timers.delete(clicked);
+    }, 900);
+    timers.set(clicked, timer);
   };
 
   document.addEventListener('click', handleClick);

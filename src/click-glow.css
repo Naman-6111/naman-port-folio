@@ -1,4 +1,7 @@
 .preview{isolation:isolate;cursor:pointer;transition:box-shadow .2s ease,border-color .2s ease,transform .25s ease,background-color .2s ease}
 .preview:hover{border-color:rgba(112,203,235,.52)}
 .preview.is-lit{border-color:#9b79ff;background-color:rgba(19,16,29,.98);background-image:none;box-shadow:0 0 0 1px rgba(155,121,255,.45),0 0 28px rgba(139,92,246,.38),0 0 58px rgba(139,92,246,.2);transform:perspective(1000px) rotateY(0) translateY(-2px)}
-@media(prefers-reduced-motion:reduce){.preview{transition:none}}
+.is-click-lit{outline:1px solid rgba(170,130,255,.85)!important;outline-offset:3px;filter:drop-shadow(0 0 9px rgba(139,92,246,.42)) drop-shadow(0 0 15px rgba(0,229,255,.15));transition:outline-color .18s,filter .18s,box-shadow .18s}
+button.is-click-lit,a.is-click-lit,.skill-chip.is-click-lit,.eco-node.is-click-lit,.event-node.is-click-lit{outline-color:#a78bfa!important;filter:drop-shadow(0 0 8px rgba(139,92,246,.68)) drop-shadow(0 0 14px rgba(0,229,255,.22))}
+.project-showcase.is-click-lit,.stat-card.is-click-lit,.achievement-card.is-click-lit{outline-offset:4px;box-shadow:0 0 0 1px rgba(155,121,255,.28),0 0 28px rgba(139,92,246,.2)}
+@media(prefers-reduced-motion:reduce){.preview,.is-click-lit{transition:none}}
