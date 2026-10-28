@@ -1,0 +1,34 @@
+.contact-section{padding-top:92px;padding-bottom:32px}
+.contact-section>.section-kicker{text-align:center;color:#00d9eb;letter-spacing:4px}
+.contact-head{display:block;text-align:center;margin:15px 0 70px}
+.contact-head h2{white-space:nowrap;font-size:clamp(30px,4.35vw,61px);line-height:1.08;letter-spacing:-.07em}
+.contact-head h2 br{display:none}
+.contact-head>div:first-child>p{max-width:710px;margin:24px auto 0;font-size:15px;line-height:1.8}
+.contact-orbit{display:none}
+.contact-content{grid-template-columns:.92fr 1.08fr;gap:40px;align-items:stretch;padding-top:0;border:0}
+.contact-details{gap:17px;justify-content:center}
+.contact-details>.micro-label{display:none}
+.contact-details>a{position:relative;display:flex;align-items:center;gap:20px;min-height:97px;margin:0;padding:15px 20px;border:1px solid #282633;border-radius:17px;background:#0c0c13;color:#e8e5ee;font-size:14px;font-weight:700}
+.contact-details>a:hover{border-color:#8e69d4;background:#11101a;transform:translateX(5px);box-shadow:0 0 28px rgba(139,92,246,.17)}
+.contact-details>a svg:first-child{box-sizing:content-box;flex:0 0 24px;width:24px;height:24px;padding:13px;border:1px solid #60419d;border-radius:13px;color:#10d9ed;background:#171323}
+.contact-details>a svg:last-child{display:none}
+.contact-details>a:after{position:absolute;top:18px;left:77px;color:#8c8997;font:9px var(--mono);letter-spacing:2px}
+.contact-details>a:nth-of-type(1):after{content:'EMAIL'}
+.contact-details>a:nth-of-type(2):after{content:'GITHUB'}
+.contact-details>a:nth-of-type(3):after{content:'LINKEDIN'}
+.contact-details>a{padding-top:28px}
+.contact-details>a .lucide{transition:filter .2s,transform .2s}
+.contact-details>a:hover svg:first-child{filter:drop-shadow(0 0 9px #00d9ed);transform:scale(1.05)}
+.availability{width:max-content;margin-top:2px;border-radius:999px;padding:10px 13px}
+.contact-form{padding:31px 34px;border:1px solid #282633;border-radius:19px;background:#0c0c13}
+.contact-form:hover{border-color:#65508c}
+.form-heading{display:none}
+.contact-form label{font:9px var(--mono);letter-spacing:2px;color:#8e8a98;text-transform:uppercase;gap:9px;margin-bottom:20px}
+.contact-form input,.contact-form textarea{padding:17px 19px;border:1px solid #282633;border-radius:13px;background:#0d0d15;font:14px 'Manrope',sans-serif;letter-spacing:0;resize:vertical}
+.contact-form textarea{min-height:155px}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#65616d}
+.contact-form input:hover,.contact-form textarea:hover{border-color:#574875;background:#101019}
+.contact-form input:focus,.contact-form textarea:focus{border-color:#9a72f5;box-shadow:0 0 0 3px rgba(139,92,246,.13),0 0 20px rgba(139,92,246,.12)}
+.submit-button{min-width:230px;min-height:60px;border-radius:13px;font-size:15px;gap:14px}
+.contact-section footer{margin-top:76px}
+@media(max-width:760px){.contact-section{padding-top:76px}.contact-head{margin:13px 0 37px}.contact-head h2{white-space:normal;font-size:clamp(38px,9vw,58px);line-height:.99}.contact-head h2 br{display:block}.contact-head>div:first-child>p{margin-top:19px;font-size:12px}.contact-content{grid-template-columns:1fr;gap:24px}.contact-details{gap:11px}.contact-details>a{min-height:81px;font-size:12px;border-radius:14px}.contact-details>a svg:first-child{width:20px;height:20px;padding:10px}.contact-details>a:after{left:66px;top:14px}.contact-details>a{padding-top:22px}.contact-form{padding:20px 16px}.contact-form label{margin-bottom:16px}.contact-form input,.contact-form textarea{padding:14px}.contact-form textarea{min-height:125px}.submit-button{min-width:0;min-height:53px;font-size:13px}.contact-section footer{margin-top:48px}}

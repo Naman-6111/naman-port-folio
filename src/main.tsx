@@ -5,6 +5,7 @@ import "./globals.css";
 import "./interaction.css";
 import "./click-glow.css";
 import "./contact-effects.css";
+import "./contact-layout.css";
 
 installPreviewGlow();
 createRoot(document.getElementById("root")!).render(<App />);
